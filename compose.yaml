@@ -1,0 +1,13 @@
+services:
+  minecraft:
+    build:
+      context: .
+      args:
+        EULA: true
+    volumes:
+#      - ./world:/opt/app/world
+      - minecraft-world:/opt/app/world
+    ports:
+      - '25565:25565'
+volumes:
+  minecraft-world:
