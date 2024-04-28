@@ -1,4 +1,4 @@
-FROM docker.io/eclipse-temurin:17 as jre-build
+FROM docker.io/eclipse-temurin:21 as jre-build
 RUN jlink \
  --add-modules java.desktop,java.management,java.naming,jdk.zipfs \
  --no-header-files \
