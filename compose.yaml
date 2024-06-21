@@ -4,8 +4,8 @@ services:
       context: .
       args:
         EULA: true
+    image: docker.io/siisise/mc:1.21
     volumes:
-#      - ./world:/opt/app/world
       - minecraft-world:/opt/app/world
     ports:
       - '25565:25565'
